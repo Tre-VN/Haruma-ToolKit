@@ -48,3 +48,7 @@ Those are the thing I used to code this
 ## Recommend
 - You should download the source code and use in offine version for faster speed.
 - If you want to have other languages, go to entry folder, select the language folder you want, copy paste all files as replacement to existed html.
+
+## Update
+- If I release new version, you just need to download new source code and delete the old one. It's simple.
+- If you want to make electron app, I already sign a packages.json there so you can make electron app with it.
