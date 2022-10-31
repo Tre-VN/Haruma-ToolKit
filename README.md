@@ -37,7 +37,7 @@ Those are the thing I used to code this
 - Special thanks to PeaID, Sarah Lydia for Vietnamese Translation
 - Vitaliy100 for Russian translation
 
-#### Source code
+## Source code
 - The source code is there but only for html and css, the scripts are crypted.
 - Special thanks to FileSaver and JSZip for making things easier.
 - Special thanks to SoftUI for the super cool UI.
