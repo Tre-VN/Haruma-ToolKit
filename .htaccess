@@ -1,0 +1,59 @@
+<IfModule mod_rewrite.c> 
+Options +FollowSymLinks -MultiViews
+
+RewriteEngine on
+RewriteBase /
+
+RewriteEngine on
+RewriteCond %{REQUEST_URI} ^/oldsite1.php$ [OR]
+RewriteCond %{REQUEST_URI} ^/oldsite2.html$ [OR]
+RewriteCond %{QUERY_STRING} ^site=old$
+RewriteRule ^(.*)$ index.php [R=301,L]
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
+RewriteRule ^([a-zA-z0-9]+).html$ /$1   [L,R=301]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/ 
+RewriteRule ^index\.html$ http://%{HTTP_HOST}/ [R=301,L]
+
+RewriteRule ^index.html$ / [L,R=301]
+
+
+# add a trailing slash to non files
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*?[^/])$ %{REQUEST_URI}/ [L,R=301,NE]
+RewriteRule ^([a-zA-z0-9]+).html$ /$1/   [L,R=301]
+# add html internally
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteRule ^([^.]+)/$ $1.html [L]
+
+#www to non
+RewriteCond %{HTTP_HOST} ^www\.(([a-z0-9_]+\.)?domain\.com)$ [NC]
+RewriteRule ^(.+?)/?$ http://%1/$1/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html/?[\s?] [NC]
+RewriteRule ^ /%1/ [R=301,NE,L]
+
+# htaccess for subdirectory
+
+# Remove trailing slashes (keep as first rule!)
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [NE,R=301,L]
+
+# Open page without php extension
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^((?!subdirectory/).*)$ subdirectory/$1 [L,NC]
+
+ErrorDocument 404 "<H1>Page not found</H1>"
+</IfModule>
