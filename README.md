@@ -27,7 +27,8 @@ Those are the thing I used to code this
 
 ## Installation
 
-Install the zip file in release. After that, run index.html to start working
+- Install the zip file in release. After that, run index.html to start working
+- If you don't want to install, you can use the web version of the tool
 
 ## Author
 
