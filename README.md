@@ -36,9 +36,13 @@ Install the zip file in release. After that, run index.html to start working
 - Vitaliy100 for Russian translation
 
 #### Source code
-The source code is there but only for html and css, the scripts are crypted.
-Special thanks to FileSaver and JSZip for making things easier.
-Special thanks to SoftUI for the super cool UI.
+- The source code is there but only for html and css, the scripts are crypted.
+- Special thanks to FileSaver and JSZip for making things easier.
+- Special thanks to SoftUI for the super cool UI.
 
 ## Lisence
 Using ISC Lisence
+
+##Recommend
+- You should download the source code and use in offine version for faster speed.
+- If you want to have other languages, go to entry folder, select the language folder you want, copy paste all files as replacement to existed html.
