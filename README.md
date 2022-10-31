@@ -22,8 +22,8 @@ Haruma ToolKit featuring Helper to make public tool easier
 ## Useage
 
 Those are the thing I used to code this
-- [node.js] - evented I/O for the backend
-- [jQuery] - best advanced javascript
+- node.js - evented I/O for the backend
+- jQuery - best advanced javascript
 
 ## Installation
 
