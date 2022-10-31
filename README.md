@@ -2,7 +2,8 @@
 ## HarumaToolKit
 
 
-Haruma ToolKit featuring Helper to make public tool easier
+- Haruma ToolKit featuring Helper to make public tool easier
+- Featuring many function to help mods maker not struggling with files
 
 ## Features
 
