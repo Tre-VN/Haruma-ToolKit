@@ -42,7 +42,7 @@ Those are the thing I used to code this
 - Special thanks to SoftUI for the super cool UI.
 
 ## Lisence
-Using ISC Lisence
+- Using ISC Lisence
 
 ## Recommend
 - You should download the source code and use in offine version for faster speed.
