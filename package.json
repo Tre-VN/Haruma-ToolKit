@@ -1,0 +1,20 @@
+{
+  "name": "harumatoolkit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "haruma",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^21.2.0",
+    "file-saver": "^2.0.5",
+    "jsonrepair": "^2.2.1",
+    "jszip": "^3.10.1"
+  },
+  "devDependencies": {
+    "electron-packager": "^15.4.0"
+  }
+}
