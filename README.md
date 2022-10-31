@@ -32,7 +32,8 @@ Install the zip file in release. After that, run index.html to start working
 ## Author
 
 - Haruma
-- Special thanks to PeaID, Sarah Lydia
+- Special thanks to PeaID, Sarah Lydia for Vietnamese Translation
+- Vitaliy100 for Russian translation
 
 #### Source code
 The source code is there but only for html and css, the scripts are crypted.
