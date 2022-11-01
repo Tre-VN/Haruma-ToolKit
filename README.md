@@ -5,6 +5,9 @@
 - Haruma ToolKit featuring Helper to make public tool easier
 - Featuring many function to help mods maker not struggling with files
 
+## Language Pack
+- HarumaToolKit support multiple language, especially big country. Start by going to "entry/[YOUR LANGUAGE]", copy and paste all the htmls as override mode.
+
 ## Features
 
 - Batch: Aliases Merge: Help you to merge aliases from jsons file
