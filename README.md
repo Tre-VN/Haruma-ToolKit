@@ -35,6 +35,7 @@ Those are the thing I used to code this
 
 - Haruma
 - Special thanks to PeaID, Sarah Lydia for Vietnamese Translation
+- Chinese·SnapDragon·Captain for Chinese (Simplified) Translation
 - Vitaliy100 for Russian translation
 
 ## Source code
